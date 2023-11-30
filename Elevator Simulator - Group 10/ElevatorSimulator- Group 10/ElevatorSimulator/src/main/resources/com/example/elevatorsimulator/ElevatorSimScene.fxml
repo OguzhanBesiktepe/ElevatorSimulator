@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<!-- Add more elevators with unique fx:id attributes as needed -->
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="761.0" prefWidth="1173.0" style="-fx-background-color: Orange;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.elevatorsimulator.ElevatorSimSceneController">
+
+    <children>
+        <Text fx:id="run_simulationCounterText" layoutX="88.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="102.13671875">
+            <font>
+                <Font name="Ebrima" size="53.0" />
+            </font>
+        </Text>
+        <ToggleButton fx:id="playButton" layoutX="13.0" layoutY="115.0" mnemonicParsing="false" onMouseClicked="#PauseTimeline" prefHeight="97.0" prefWidth="140.0" text="▶">
+            <font>
+                <Font name="System Bold" size="33.0" />
+            </font>
+        </ToggleButton>
+      <Text fill="#4251ff" layoutX="14.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Floor Level:" wrappingWidth="147.13671875">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="26.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="691.0" layoutX="202.0" layoutY="70.0" stroke="BLACK" strokeType="INSIDE" width="194.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.44995089212637096">
+                     <color>
+                        <Color red="0.12999999523162842" green="1.0" blue="0.4546964168548584" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="691.0" layoutX="437.0" layoutY="70.0" stroke="RED" strokeType="INSIDE" width="188.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.44995089212637096">
+                     <color>
+                        <Color red="1.0" green="0.12999999523162842" blue="0.17971429228782654" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="685.0" layoutX="964.0" layoutY="77.0" stroke="BLACK" strokeType="INSIDE" width="188.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.44995089212637096">
+                     <color>
+                        <Color red="0.9413333535194397" green="1.0" blue="0.11999999731779099" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Text layoutX="211.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Standard" wrappingWidth="131.13671875">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Text layoutX="505.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VIP" wrappingWidth="131.13671875">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Text layoutX="726.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Freight" wrappingWidth="131.13671875">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Text layoutX="986.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Glass" wrappingWidth="131.13671875">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="48.0" layoutX="226.0" layoutY="708.0" stroke="BLACK" strokeType="INSIDE" width="147.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="48.0" layoutX="454.0" layoutY="708.0" stroke="BLACK" strokeType="INSIDE" width="147.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="48.0" layoutX="973.0" layoutY="708.0" stroke="BLACK" strokeType="INSIDE" width="173.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="48.0" layoutX="719.0" layoutY="708.0" stroke="BLACK" strokeType="INSIDE" width="147.0" />
+      <ImageView fitHeight="48.0" fitWidth="74.0" layoutX="275.0" layoutY="708.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../Downloads/kisspng-arrow-computer-icons-symbol-clip-art-down-arrow-5ac87c554843c4.062862421523088469296.png" />
+         </image></ImageView>
+      <Line endX="158.99998474121094" endY="71.5" layoutX="-1.0" layoutY="26.0" startY="71.5" />
+      <Line endY="-34.0" layoutX="158.0" layoutY="21.0" startX="0.5" startY="77.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="691.0" layoutX="705.0" layoutY="74.0" stroke="BLACK" strokeType="INSIDE" width="173.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.44995089212637096">
+                     <color>
+                        <Color green="0.7666666507720947" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.0551999993622303" green="0.6899999976158142" blue="0.15193143486976624" opacity="0.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="48.0" fitWidth="74.0" layoutX="503.0" layoutY="708.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../Downloads/kisspng-arrow-computer-icons-symbol-clip-art-down-arrow-5ac87c554843c4.062862421523088469296.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="74.0" layoutX="768.0" layoutY="713.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../Downloads/kisspng-arrow-computer-icons-symbol-clip-art-down-arrow-5ac87c554843c4.062862421523088469296.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="74.0" layoutX="1036.0" layoutY="708.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../Downloads/kisspng-arrow-computer-icons-symbol-clip-art-down-arrow-5ac87c554843c4.062862421523088469296.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="275.0" layoutY="714.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../Downloads/group.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="503.0" layoutY="714.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../Downloads/group.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="768.0" layoutY="713.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../Downloads/group.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="1028.0" layoutY="708.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../Downloads/group.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
